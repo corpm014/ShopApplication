@@ -1,3 +1,5 @@
+# Run file of the whole project
+
 """
 Project leader:
 Marc
@@ -49,4 +51,7 @@ from Database import *
 
 # Run line
 if __name__ == "__main__":
-    
+    print("================================")
+    print("Thanks for using Shop Applcation!")
+    print("Github link: https://github.com/corpm014/ShopApplication")
+    print("================================")

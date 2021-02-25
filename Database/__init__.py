@@ -10,3 +10,4 @@ class Database:
         # Connection and cursor
         self.conn = sqlite3.connect(self.database)
         self.cusror = self.conn.cursor()
+

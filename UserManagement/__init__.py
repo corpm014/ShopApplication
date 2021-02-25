@@ -33,7 +33,5 @@ class Manager:
         :param email:
         :param password:
         """
-        pass
-
-        
+        pass        
 

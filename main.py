@@ -45,13 +45,20 @@ Features:
 
 # Imports
 from UserManagement import *
-from GUI import *
+from GUI import homepage
 from Database import *
 
 
-# Run line
+# Run line command
 if __name__ == "__main__":
     print("================================")
     print("Thanks for using Shop Applcation!")
-    print("Github link: https://github.com/corpm014/ShopApplication")
+    print("Github link:\n https://github.com/corpm014/ShopApplication")
     print("================================")
+
+    # Creating a database
+    database = Database("shop.db")
+    
+    shop = homepage.Homepage()
+    shop.geometry("500x500")
+    shop.mainloop()

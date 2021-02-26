@@ -27,11 +27,14 @@ class Manager:
         return False
     
     # Function that signups a user (before database)
-    def signUp(self, username, email, password):
+    def signUp(self, username, email, password) -> None:
         """
         :param username:
         :param email:
         :param password:
+        :return None:
         """
-        pass        
 
+        # Creating instance of user and hashing the password
+        user = User(username=username, email=email, password=password)
+        user.hashPassword()

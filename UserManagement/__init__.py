@@ -1,11 +1,14 @@
 import bcrypt
+import smtplib
 from UserManagement.userClass import User
 
 # Manager class
 class Manager:
     # Constructor
-    def __init__(self, app):
+    def __init__(self, app, email, password):
         self.app = app
+        self.email = email
+        self.password = password
     
 
     # Function that logins in a user (after database has fetched)
@@ -38,3 +41,15 @@ class Manager:
         # Creating instance of user and hashing the password
         user = User(username=username, email=email, password=password)
         user.hashPassword()
+
+        subject = "Sign Up"
+        body = '''
+        Hi this is a test email manager
+               '''  
+
+        try:
+            with smtplib.SMTP("smtp.gmail.com", 587) as smtp:
+                smtp.starttls()
+                smtp.login(self.email, self.password)
+        except Exception as E:
+            print(f"[EMAIL MANAGER ERROR] {E}")

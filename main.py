@@ -47,6 +47,7 @@ Features:
 from UserManagement import *
 from GUI import homepage
 from Database import *
+from UserManagement import Manager
 
 
 # Run line command
@@ -58,7 +59,8 @@ if __name__ == "__main__":
 
     # Creating a database
     database = Database("shop.db")
+    database.setUp()
     
-    shop = homepage.Homepage()
+    shop = homepage.Homepage(userManager=Manager, database=database)
     shop.geometry("500x500")
     shop.mainloop()

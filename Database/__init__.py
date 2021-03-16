@@ -21,7 +21,7 @@ class Database:
             if self.cursor.fetchone() is None:
                 return False
             return True
-    
+bruh    
     def addUser(self, username, password):
         exists = self.checkIfUserExists(username=username)
         if not exists:

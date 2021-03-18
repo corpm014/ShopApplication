@@ -1,9 +1,11 @@
-from tkinter import *
 import tkinter as tk
+from tk import *
 
-def admin(self):
-  pass
-
-class adminApp(tk.Tk):
+class AdminPage(tk.Tk):
   def __init__(self):
-    pass
+    
+      super().__init__()
+      self.geometry('200x200')
+      self.BasketTitle = tk.Label(self,text='AdminPage')
+      self.BasketTitle.grid(row=5,column=5)
+        

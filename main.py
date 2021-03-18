@@ -62,5 +62,5 @@ if __name__ == "__main__":
     database.setUp()
     
     shop = homepage.Homepage(userManager=Manager, database=database)
-    shop.geometry("500x500")
+    shop.geometry("800x800")
     shop.mainloop()

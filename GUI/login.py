@@ -12,7 +12,7 @@ class LoginApp(tk.Tk):
         super().__init__()
         self.l0 = tk.Label( self, text = " Login to Shop!")
         self.l0.grid(row=0,column=4)
-        self.space = tk.Label( self, text = " " )
+        self.space = tk.Label( self, text = " ")
         self.space.grid(row=1,column=2)
 
         self.usernamel=tk.Label(self, text="Username/Email Address")
@@ -50,8 +50,7 @@ class LoginApp(tk.Tk):
         else:
             print("User not logged in")
 
-    # if username.get() == 'u'and password.get() =='p':
-        # print('logged in')
+
         
 
         

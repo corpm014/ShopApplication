@@ -41,8 +41,16 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 version = "1.15.0"
 
+[[package]]
+category = "main"
+description = "TensorKit is a deep learning helper between Python and C++."
+name = "tk"
+optional = false
+python-versions = "*"
+version = "0.1.0"
+
 [metadata]
-content-hash = "5b9d7ce9420a291ef6dbba14c61ff848ad9046c2bcc4bc05f809f194d9492599"
+content-hash = "97a6acd06bce1cdc59365001e57b114fdb9051a7dff92dd39f2dd11272cfe90b"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -101,4 +109,8 @@ pycparser = [
 six = [
     {file = "six-1.15.0-py2.py3-none-any.whl", hash = "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"},
     {file = "six-1.15.0.tar.gz", hash = "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259"},
+]
+tk = [
+    {file = "tk-0.1.0-py3-none-any.whl", hash = "sha256:703a69ff0d5ba2bd2f7440582ad10160e4a6561595d33457dc6caa79b9bf4930"},
+    {file = "tk-0.1.0.tar.gz", hash = "sha256:60bc8923d5d35f67f5c6bd93d4f0c49d2048114ec077768f959aef36d4ed97f8"},
 ]
